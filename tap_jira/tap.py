@@ -72,6 +72,13 @@ class TapJira(Tap):
                             description="A JQL query to filter issues",
                             title="JQL Query",
                         ),
+                        th.Property(
+                            "fields",
+                            th.StringType,
+                            description="A comma-separated list of fields to include",
+                            title="Fields",
+                            default="*all",
+                        ),
                     ),
                     title="Issues Stream Options",
                     description="Options specific to the issues stream",
